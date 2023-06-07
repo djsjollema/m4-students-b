@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using TMPro;
 
 public class PongGame : MonoBehaviour
 {
@@ -11,6 +13,10 @@ public class PongGame : MonoBehaviour
     Vector2 maxView;
     Vector2 minView;
 
+    public TMP_Text Ascore;
+    public TMP_Text BScore;
+
+
     RaycastHit2D hit;
 
     void Start()
@@ -19,7 +25,7 @@ public class PongGame : MonoBehaviour
         //Debug.Log(maxView);
         minView = Camera.main.ScreenToWorldPoint(Vector2.zero);
         //Debug.Log(minView);
-
+        Ascore.text = "doei";
     }
 
     // Update is called once per frame
